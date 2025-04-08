@@ -2,7 +2,7 @@ const results = document.getElementById('results');
 let todosLosPokemones = [];
 async function cargarPokemonesIniciales(limit=150) {
   try {
-    const res = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=${limit}`);
+    const res = await fetch('https://pokeapi.co/api/v2/pokemon?limit=${limit}');
     const data = await res.json();
 
     const detallesPromises = data.results.map(poke => fetch(poke.url).then(r => r.json()));
