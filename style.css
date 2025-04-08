@@ -1,0 +1,11 @@
+body {
+    font-family: system-ui;
+    background: black;
+    color: white;
+    text-align: center;
+  }
+  
+  #results {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
